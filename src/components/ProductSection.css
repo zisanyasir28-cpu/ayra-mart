@@ -1,0 +1,11 @@
+.prod-sec { padding: 56px 0; }
+
+.prod-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+@media (max-width: 1100px) { .prod-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 800px) { .prod-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 560px) { .prod-grid { grid-template-columns: repeat(2, 1fr); } }

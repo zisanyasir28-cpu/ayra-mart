@@ -1,0 +1,46 @@
+.testi-sec {
+  padding: 56px 0;
+  background: var(--green-light);
+}
+
+.testi-sec .sec-title::after { left: 50%; transform: translateX(-50%); }
+
+.testi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 36px;
+}
+
+.testi-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(26,158,92,0.15);
+}
+
+.testi-quote {
+  color: var(--green-mid);
+  opacity: 0.3;
+  margin-bottom: 12px;
+}
+
+.testi-text {
+  font-size: 0.84rem;
+  color: var(--medium);
+  line-height: 1.7;
+  margin-bottom: 14px;
+  font-family: 'Hind Siliguri', 'Poppins', sans-serif;
+}
+
+.testi-stars { display: flex; gap: 2px; margin-bottom: 16px; }
+
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar { font-size: 2rem; width: 44px; height: 44px; background: var(--green-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.testi-name { font-size: 0.85rem; font-weight: 700; color: var(--dark); }
+.testi-loc { font-size: 0.72rem; color: var(--light); }
+
+@media (max-width: 900px) { .testi-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 500px) { .testi-grid { grid-template-columns: 1fr; } }

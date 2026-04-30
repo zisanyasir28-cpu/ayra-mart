@@ -1,0 +1,126 @@
+.pcard {
+  background: white;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  overflow: hidden;
+  position: relative;
+  transition: border-color 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+}
+
+.pcard:hover {
+  border-color: var(--green);
+  box-shadow: var(--shadow-md);
+}
+
+.pcard-disc {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: var(--red);
+  color: white;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 6px;
+  z-index: 3;
+}
+
+.pcard-badge {
+  position: absolute;
+  top: 10px; left: 10px;
+  background: var(--green);
+  color: white;
+  font-size: 0.66rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+  z-index: 3;
+}
+
+.pcard-disc + .pcard-badge { top: 32px; }
+
+.pcard-wish {
+  position: absolute;
+  top: 10px; right: 10px;
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  background: white;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--light);
+  box-shadow: var(--shadow-sm);
+  z-index: 3;
+  transition: color 0.2s, transform 0.2s;
+  border: 1px solid var(--border);
+}
+.pcard-wish:hover, .pcard-wish.liked { color: var(--red); border-color: #fee2e2; background: #fff5f5; }
+
+.pcard-img-wrap {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.pcard-img {
+  width: 100%; height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s cubic-bezier(0.4,0,0.2,1);
+}
+
+.pcard:hover .pcard-img { transform: scale(1.1); }
+
+.pcard-img-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0,0,0,0.55), transparent);
+  transform: translateY(100%);
+  transition: transform 0.3s;
+  display: flex; justify-content: center;
+}
+
+.pcard:hover .pcard-img-overlay { transform: translateY(0); }
+
+.pcard-quick {
+  background: white;
+  color: var(--green-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: background 0.2s;
+  font-family: var(--font);
+}
+.pcard-quick:hover { background: var(--green); color: white; }
+
+.pcard-body { padding: 12px; }
+
+.pcard-cat { font-size: 0.68rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.04em; }
+.pcard-name { font-size: 0.88rem; font-weight: 700; color: var(--dark); margin: 3px 0 1px; line-height: 1.3; }
+.pcard-bn { font-size: 0.72rem; color: var(--light); font-family: 'Hind Siliguri', sans-serif; margin-bottom: 6px; }
+
+.pcard-rating {
+  display: flex; align-items: center; gap: 2px; margin-bottom: 10px;
+}
+.pcard-rev { font-size: 0.7rem; color: var(--light); margin-left: 3px; }
+
+.pcard-footer {
+  display: flex; align-items: center; justify-content: space-between;
+}
+
+.pcard-price-wrap { display: flex; align-items: baseline; gap: 5px; flex-wrap: wrap; }
+.pcard-price { font-size: 1rem; font-weight: 800; color: var(--green-dark); }
+.pcard-old { font-size: 0.76rem; color: var(--light); text-decoration: line-through; }
+.pcard-unit { font-size: 0.7rem; color: var(--light); }
+
+.pcard-add {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  background: var(--green-light);
+  color: var(--green-dark);
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  border: 1.5px solid var(--green);
+}
+.pcard-add:hover { background: var(--green); color: white; }
+.pcard-add.added { background: var(--green); color: white; animation: pop 0.3s ease; }
