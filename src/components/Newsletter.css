@@ -1,5 +1,5 @@
 .nl-sec {
-  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-soft) 100%);
+  background: linear-gradient(135deg, #091228 0%, #0c1a3a 50%, #1a3a6e 100%);
   padding: 72px 0;
 }
 
@@ -12,13 +12,13 @@
 
 .nl-icon {
   width: 56px; height: 56px;
-  background: linear-gradient(135deg, var(--green), var(--green-mid));
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
   border-radius: 16px;
   display: flex; align-items: center; justify-content: center;
-  color: white;
+  color: #0c1a3a;
   margin-bottom: 20px;
-  box-shadow: 0 8px 24px rgba(26,158,92,0.4);
-  animation: float 3s ease-in-out infinite;
+  box-shadow: 0 8px 24px rgba(251,191,36,0.4);
+  animation: float-subtle 3s ease-in-out infinite;
 }
 
 .nl-left h2 { font-size: 1.8rem; font-weight: 900; color: white; margin-bottom: 12px; }
@@ -39,7 +39,7 @@
   transition: border-color 0.2s, background 0.2s;
 }
 .nl-input::placeholder { color: rgba(255,255,255,0.4); }
-.nl-input:focus { border-color: var(--green-mid); background: rgba(255,255,255,0.1); }
+.nl-input:focus { border-color: #fbbf24; background: rgba(255,255,255,0.1); }
 .nl-select { cursor: pointer; }
 .nl-select option { background: var(--dark-soft); color: white; }
 
@@ -48,23 +48,23 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  background: linear-gradient(135deg, var(--green), var(--green-mid));
-  color: white;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #0c1a3a;
   font-size: 0.92rem;
-  font-weight: 700;
+  font-weight: 800;
   padding: 15px;
   border-radius: 10px;
-  transition: opacity 0.2s, transform 0.2s;
+  transition: opacity 0.2s, transform 0.2s, box-shadow 0.2s;
   font-family: var(--font);
-  box-shadow: 0 6px 20px rgba(26,158,92,0.4);
+  box-shadow: 0 6px 20px rgba(251,191,36,0.35);
 }
-.nl-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+.nl-btn:hover { opacity: 0.95; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(251,191,36,0.45); }
 
 .nl-note { font-size: 0.74rem; color: rgba(255,255,255,0.4); text-align: center; }
 
 .nl-success {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 12px; color: var(--green-mid); text-align: center; padding: 40px;
+  gap: 12px; color: #fbbf24; text-align: center; padding: 40px;
 }
 .nl-success p { font-size: 1rem; font-weight: 700; color: white; }
 .nl-success span { font-size: 0.85rem; color: rgba(255,255,255,0.6); }

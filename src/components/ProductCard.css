@@ -9,15 +9,15 @@
 }
 
 .pcard:hover {
-  border-color: var(--green);
-  box-shadow: var(--shadow-md);
+  border-color: var(--orange);
+  box-shadow: 0 4px 16px rgba(251,191,36,0.2), var(--shadow-md);
 }
 
 .pcard-disc {
   position: absolute;
   top: 10px; left: 10px;
-  background: var(--red);
-  color: white;
+  background: var(--orange);
+  color: #0c1a3a;
   font-size: 0.68rem;
   font-weight: 800;
   padding: 3px 8px;
@@ -88,10 +88,10 @@
   font-weight: 700;
   padding: 8px 20px;
   border-radius: 50px;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
   font-family: var(--font);
 }
-.pcard-quick:hover { background: var(--green); color: white; }
+.pcard-quick:hover { background: var(--orange); color: #0c1a3a; }
 
 .pcard-body { padding: 12px; }
 
@@ -116,11 +116,11 @@
 .pcard-add {
   width: 36px; height: 36px;
   border-radius: 10px;
-  background: var(--green-light);
+  background: var(--orange-light);
   color: var(--green-dark);
   display: flex; align-items: center; justify-content: center;
   transition: background 0.2s, color 0.2s, transform 0.15s;
-  border: 1.5px solid var(--green);
+  border: 1.5px solid var(--orange);
 }
-.pcard-add:hover { background: var(--green); color: white; }
-.pcard-add.added { background: var(--green); color: white; animation: pop 0.3s ease; }
+.pcard-add:hover { background: var(--orange); color: #0c1a3a; }
+.pcard-add.added { background: var(--orange); color: #0c1a3a; animation: pop 0.3s ease; }

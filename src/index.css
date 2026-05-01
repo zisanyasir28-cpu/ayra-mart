@@ -1,25 +1,25 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green: #1a9e5c;
-  --green-dark: #14794a;
-  --green-mid: #22c55e;
-  --green-light: #e8f8f0;
-  --orange: #f97316;
-  --orange-dark: #ea580c;
-  --orange-light: #fff3e8;
+  --green: #1a3a6e;
+  --green-dark: #0c1a3a;
+  --green-mid: #2563eb;
+  --green-light: #e8f0fe;
+  --orange: #fbbf24;
+  --orange-dark: #f59e0b;
+  --orange-light: #fffbeb;
   --red: #e53e3e;
-  --yellow: #f6c90e;
+  --yellow: #fde68a;
   --dark: #111827;
-  --dark-soft: #1f2937;
+  --dark-soft: #0c1a3a;
   --medium: #4b5563;
   --light: #9ca3af;
   --border: #e5e7eb;
-  --bg: #f9fafb;
+  --bg: #f8faff;
   --white: #ffffff;
   --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(0,0,0,0.1);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.15);
+  --shadow-md: 0 4px 16px rgba(12,26,58,0.12);
+  --shadow-lg: 0 12px 40px rgba(12,26,58,0.18);
   --radius: 12px;
   --radius-lg: 20px;
   --font: 'Poppins', system-ui, sans-serif;
@@ -70,30 +70,36 @@ ul { list-style: none; }
   position: absolute;
   bottom: 0; left: 0;
   width: 48px; height: 4px;
-  background: linear-gradient(90deg, var(--green), var(--green-mid));
+  background: linear-gradient(90deg, var(--orange), var(--orange-dark));
   border-radius: 2px;
 }
 .sec-sub { font-size: 0.85rem; color: var(--light); margin-top: 4px; }
 .sec-link {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--green);
+  color: var(--green-dark);
   white-space: nowrap;
   padding: 6px 16px;
   border: 2px solid var(--green);
   border-radius: 50px;
   transition: all 0.2s;
 }
-.sec-link:hover { background: var(--green); color: white; }
+.sec-link:hover { background: var(--green-dark); color: white; border-color: var(--green-dark); }
 
 /* Keyframes */
 @keyframes spin-slow { to { transform: rotate(360deg); } }
 @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes float-subtle { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
 @keyframes pulse-ring { 0%{transform:scale(1);opacity:0.7} 100%{transform:scale(1.5);opacity:0} }
 @keyframes leaf-sway { 0%,100%{transform:rotate(-5deg)} 50%{transform:rotate(5deg)} }
 @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fade-blur-in { from{opacity:0;filter:blur(8px);transform:translateY(16px)} to{opacity:1;filter:blur(0);transform:translateY(0)} }
 @keyframes shimmer { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
 @keyframes pop { 0%{transform:scale(1)} 50%{transform:scale(1.15)} 100%{transform:scale(1)} }
 @keyframes slide-in-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
 @keyframes badge-glow { 0%,100%{box-shadow:0 0 0 0 rgba(229,62,62,0.4)} 50%{box-shadow:0 0 0 8px rgba(229,62,62,0)} }
+@keyframes saffron-glow { 0%,100%{box-shadow:0 0 0 0 rgba(251,191,36,0.5)} 50%{box-shadow:0 0 0 10px rgba(251,191,36,0)} }
+@keyframes sparkle { 0%,100%{transform:scale(0.6);opacity:0.4} 50%{transform:scale(1.3);opacity:1} }
+@keyframes glint { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
+@keyframes gradient-shift { 0%,100%{filter:hue-rotate(0deg)} 50%{filter:hue-rotate(12deg)} }

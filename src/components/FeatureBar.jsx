@@ -3,7 +3,7 @@ import { Truck, Shield, RotateCcw, Clock, Leaf, CreditCard } from 'lucide-react'
 import './FeatureBar.css'
 
 const features = [
-  { icon: Truck, title: 'Free Delivery', sub: 'Orders above ৳500', color: '#1a9e5c' },
+  { icon: Truck, title: 'Free Delivery', sub: 'Orders above ৳500', color: '#1a3a6e' },
   { icon: Clock, title: 'Same Day Delivery', sub: 'Order before 2 PM', color: '#2563eb' },
   { icon: Leaf, title: '100% Fresh', sub: 'Farm-sourced daily', color: '#16a34a' },
   { icon: Shield, title: 'Quality Guaranteed', sub: 'Or money back', color: '#7c3aed' },

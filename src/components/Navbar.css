@@ -8,7 +8,7 @@
 .nav-topinfo { display: flex; align-items: center; gap: 20px; }
 .nav-topinfo span { display: flex; align-items: center; gap: 4px; }
 .nav-topinfo a { color: #9ca3af; transition: color 0.2s; }
-.nav-topinfo a:hover { color: var(--green-mid); }
+.nav-topinfo a:hover { color: var(--orange); }
 
 .navbar {
   position: sticky;
@@ -41,7 +41,7 @@
 }
 .nav-search:focus-within {
   border-color: var(--green);
-  box-shadow: 0 0 0 3px rgba(26,158,92,0.12);
+  box-shadow: 0 0 0 3px rgba(26,58,110,0.14);
 }
 .search-icon { margin: 0 12px; color: var(--light); flex-shrink: 0; }
 .nav-search input {
@@ -55,15 +55,15 @@
   padding: 10px 0;
 }
 .search-btn {
-  background: var(--green);
-  color: white;
+  background: var(--orange);
+  color: #0c1a3a;
   font-size: 0.85rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 10px 22px;
   transition: background 0.2s;
   white-space: nowrap;
 }
-.search-btn:hover { background: var(--green-dark); }
+.search-btn:hover { background: var(--orange-dark); }
 
 .nav-actions { display: flex; align-items: center; gap: 8px; }
 
@@ -79,20 +79,21 @@
   font-size: 0.68rem;
   font-weight: 600;
 }
-.nav-icon-btn:hover { color: var(--green); background: var(--green-light); }
+.nav-icon-btn:hover { color: var(--orange-dark); background: var(--orange-light); }
 .nav-icon-btn span { display: none; }
 
 .cart-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--green);
+  background: var(--green-dark);
   color: white;
   padding: 9px 18px;
   border-radius: 50px;
-  transition: background 0.2s, transform 0.2s;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  border: 1.5px solid rgba(251,191,36,0.35);
 }
-.cart-btn:hover { background: var(--green-dark); transform: scale(1.03); }
+.cart-btn:hover { background: #091228; transform: scale(1.03); box-shadow: 0 4px 16px rgba(251,191,36,0.25); }
 
 .cart-icon-wrap { position: relative; }
 .cart-badge {
@@ -114,8 +115,8 @@
 
 /* Nav links bar */
 .nav-links-bar {
-  background: linear-gradient(90deg, var(--green-dark) 0%, #0f6e44 50%, #0d7a4a 100%);
-  border-top: 1px solid rgba(255,255,255,0.1);
+  background: linear-gradient(90deg, #0c1a3a 0%, #1a3a6e 50%, #0c1a3a 100%);
+  border-top: 1px solid rgba(251,191,36,0.15);
 }
 .nav-links-inner {
   display: flex;
@@ -137,7 +138,7 @@
   white-space: nowrap;
 }
 .nav-link:hover { background: rgba(255,255,255,0.15); color: white; }
-.nav-link.hot { color: #fde047; font-weight: 700; }
+.nav-link.hot { color: #fbbf24; font-weight: 700; }
 .hot-badge {
   background: var(--red);
   color: white;

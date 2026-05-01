@@ -9,12 +9,12 @@ const slides = [
     headline: 'Farm Fresh to Your',
     highlight: 'Doorstep',
     sub: 'আমাদের তাজা শাকসবজি সরাসরি কৃষক থেকে আপনার রান্নাঘরে',
-    desc: 'Get the freshest vegetables, fruits & groceries delivered same-day in Sirajganj.',
+    desc: 'Get the freshest vegetables, fruits & groceries delivered same-day.',
     cta: 'Shop Fresh Veggies',
     badge: '🥬 Farm Fresh',
     img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #064e3b 0%, #065f46 40%, #047857 100%)',
-    accent: '#34d399',
+    bg: 'linear-gradient(135deg, #0c1a3a 0%, #1a3a6e 45%, #1e40af 100%)',
+    accent: '#fbbf24',
     tag: '#vegetables',
   },
   {
@@ -26,8 +26,8 @@ const slides = [
     cta: 'Order Fish & Meat',
     badge: '🐟 Daily Fresh',
     img: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #1e3a5f 0%, #1e40af 40%, #1d4ed8 100%)',
-    accent: '#60a5fa',
+    bg: 'linear-gradient(135deg, #091228 0%, #0c1a3a 45%, #1a3a6e 100%)',
+    accent: '#f59e0b',
     tag: '#fish',
   },
   {
@@ -37,10 +37,10 @@ const slides = [
     sub: 'চাল, ডাল, তেল, মশলা — সবকিছু এক জায়গায় সেরা দামে',
     desc: 'Rice, oil, spices, dal & all daily essentials at the lowest prices in town. Guaranteed!',
     cta: 'Shop Grocery',
-    badge: '💰 Best Price',
+    badge: '✦ Best Price',
     img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #7c2d12 0%, #9a3412 40%, #c2410c 100%)',
-    accent: '#fb923c',
+    bg: 'linear-gradient(135deg, #0c1a3a 0%, #1a3a6e 40%, #0f2d5e 100%)',
+    accent: '#fde68a',
     tag: '#grocery',
   },
 ]
@@ -127,7 +127,7 @@ export default function HeroSlider() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55 }}
             >
-              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#111' }}>
+              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#0c1a3a' }}>
                 <ShoppingBag size={18} />
                 {s.cta}
               </a>
