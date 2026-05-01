@@ -1,6 +1,6 @@
 .flash-sec {
   padding: 56px 0;
-  background: linear-gradient(180deg, #e8f0fe 0%, #f8faff 60%, #ffffff 100%);
+  background: linear-gradient(180deg, #fdf9f0 0%, #f5f0e6 60%, #faf6ef 100%);
 }
 
 .flash-header {
@@ -20,11 +20,12 @@
 
 .flash-icon {
   width: 48px; height: 48px;
-  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  background: linear-gradient(135deg, #1a1710, #0a0a0a);
   border-radius: 14px;
   display: flex; align-items: center; justify-content: center;
-  color: #0c1a3a;
-  box-shadow: 0 6px 20px rgba(251,191,36,0.45);
+  color: #c9a84c;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3), inset 0 1px 0 rgba(201,168,76,0.2);
+  border: 1px solid rgba(201,168,76,0.2);
 }
 
 .flash-title { font-size: 1.4rem; font-weight: 900; color: var(--dark); padding-bottom: 6px; }
@@ -73,7 +74,7 @@
   cursor: pointer;
 }
 
-.flash-card:hover { border-color: var(--orange); box-shadow: 0 0 0 2px rgba(251,191,36,0.2); }
+.flash-card:hover { border-color: #c9a84c; box-shadow: 0 0 0 2px rgba(201,168,76,0.15); }
 
 .flash-disc-badge {
   position: absolute;
@@ -118,13 +119,14 @@
 .flash-add-btn {
   width: 42px; height: 42px;
   border-radius: 50%;
-  background: var(--orange);
-  color: #0c1a3a;
+  background: #0a0a0a;
+  color: #c9a84c;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 4px 14px rgba(251,191,36,0.5);
-  transition: background 0.2s, transform 0.2s;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  border: 1px solid rgba(201,168,76,0.3);
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
 }
-.flash-add-btn:hover { background: var(--orange-dark); transform: scale(1.1); }
+.flash-add-btn:hover { background: #1a1710; transform: scale(1.1); box-shadow: 0 4px 16px rgba(201,168,76,0.25); }
 
 .flash-info { padding: 12px; }
 .flash-cat { font-size: 0.68rem; font-weight: 700; color: var(--green); text-transform: uppercase; letter-spacing: 0.04em; }

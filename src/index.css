@@ -1,28 +1,29 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green: #1a3a6e;
-  --green-dark: #0c1a3a;
-  --green-mid: #2563eb;
-  --green-light: #e8f0fe;
-  --orange: #fbbf24;
-  --orange-dark: #f59e0b;
-  --orange-light: #fffbeb;
-  --red: #e53e3e;
-  --yellow: #fde68a;
-  --dark: #111827;
-  --dark-soft: #0c1a3a;
-  --medium: #4b5563;
-  --light: #9ca3af;
-  --border: #e5e7eb;
-  --bg: #f8faff;
+  --green: #a67c00;
+  --green-dark: #0a0a0a;
+  --green-mid: #c9a84c;
+  --green-light: #faf6ef;
+  --orange: #c9a84c;
+  --orange-dark: #9a7308;
+  --orange-light: #fdf9f0;
+  --red: #991b1b;
+  --yellow: #f0d060;
+  --dark: #1a1710;
+  --dark-soft: #1a1710;
+  --medium: #5c5242;
+  --light: #a89880;
+  --border: #e8e0d0;
+  --bg: #f5f0e6;
   --white: #ffffff;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 16px rgba(12,26,58,0.12);
-  --shadow-lg: 0 12px 40px rgba(12,26,58,0.18);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.07);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.16);
   --radius: 12px;
   --radius-lg: 20px;
   --font: 'Poppins', system-ui, sans-serif;
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
 }
 
 html { scroll-behavior: smooth; }
@@ -59,11 +60,13 @@ ul { list-style: none; }
   gap: 16px;
 }
 .sec-title {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: var(--font-display);
   color: var(--dark);
   position: relative;
   padding-bottom: 10px;
+  letter-spacing: 0.01em;
 }
 .sec-title::after {
   content: '';
@@ -99,7 +102,8 @@ ul { list-style: none; }
 @keyframes pop { 0%{transform:scale(1)} 50%{transform:scale(1.15)} 100%{transform:scale(1)} }
 @keyframes slide-in-right { from{transform:translateX(100%)} to{transform:translateX(0)} }
 @keyframes badge-glow { 0%,100%{box-shadow:0 0 0 0 rgba(229,62,62,0.4)} 50%{box-shadow:0 0 0 8px rgba(229,62,62,0)} }
-@keyframes saffron-glow { 0%,100%{box-shadow:0 0 0 0 rgba(251,191,36,0.5)} 50%{box-shadow:0 0 0 10px rgba(251,191,36,0)} }
-@keyframes sparkle { 0%,100%{transform:scale(0.6);opacity:0.4} 50%{transform:scale(1.3);opacity:1} }
+@keyframes gold-glow { 0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,0.5)} 50%{box-shadow:0 0 0 10px rgba(201,168,76,0)} }
+@keyframes sparkle { 0%,100%{transform:scale(0.6) rotate(0deg);opacity:0.4} 50%{transform:scale(1.3) rotate(20deg);opacity:1} }
 @keyframes glint { 0%{background-position:-200% 0} 100%{background-position:200% 0} }
-@keyframes gradient-shift { 0%,100%{filter:hue-rotate(0deg)} 50%{filter:hue-rotate(12deg)} }
+@keyframes gradient-shift { 0%,100%{filter:brightness(1)} 50%{filter:brightness(1.06)} }
+@keyframes crown-glow { 0%,100%{filter:drop-shadow(0 0 4px rgba(201,168,76,0.6))} 50%{filter:drop-shadow(0 0 10px rgba(201,168,76,1))} }

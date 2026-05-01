@@ -11,10 +11,10 @@ const slides = [
     sub: 'আমাদের তাজা শাকসবজি সরাসরি কৃষক থেকে আপনার রান্নাঘরে',
     desc: 'Get the freshest vegetables, fruits & groceries delivered same-day.',
     cta: 'Shop Fresh Veggies',
-    badge: '🥬 Farm Fresh',
+    badge: '✦ Farm Fresh',
     img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #0c1a3a 0%, #1a3a6e 45%, #1e40af 100%)',
-    accent: '#fbbf24',
+    bg: 'linear-gradient(135deg, #0a0a0a 0%, #1a1308 50%, #2d2200 100%)',
+    accent: '#c9a84c',
     tag: '#vegetables',
   },
   {
@@ -24,10 +24,10 @@ const slides = [
     sub: 'প্রতিদিন সকালে তাজা মাছ ও মাংস — সরাসরি বাজার থেকে',
     desc: 'Fresh Hilsa, Rohu, Chicken & Beef — sourced daily from local markets for maximum freshness.',
     cta: 'Order Fish & Meat',
-    badge: '🐟 Daily Fresh',
+    badge: '✦ Daily Fresh',
     img: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #091228 0%, #0c1a3a 45%, #1a3a6e 100%)',
-    accent: '#f59e0b',
+    bg: 'linear-gradient(135deg, #0a0a0a 0%, #120e07 50%, #1c1508 100%)',
+    accent: '#e8c96c',
     tag: '#fish',
   },
   {
@@ -39,8 +39,8 @@ const slides = [
     cta: 'Shop Grocery',
     badge: '✦ Best Price',
     img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #0c1a3a 0%, #1a3a6e 40%, #0f2d5e 100%)',
-    accent: '#fde68a',
+    bg: 'linear-gradient(135deg, #0f0d08 0%, #1c1710 50%, #2a2010 100%)',
+    accent: '#f0d060',
     tag: '#grocery',
   },
 ]
@@ -127,7 +127,7 @@ export default function HeroSlider() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55 }}
             >
-              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#0c1a3a' }}>
+              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#0a0a0a' }}>
                 <ShoppingBag size={18} />
                 {s.cta}
               </a>
