@@ -1,29 +1,29 @@
 .pcard {
   background: white;
   border-radius: var(--radius);
-  border: 1.5px solid var(--border);
+  border: none;
+  box-shadow: 0 2px 8px rgba(13,59,53,0.08), 0 0 0 1px rgba(212,232,229,0.8);
   overflow: hidden;
   position: relative;
-  transition: border-color 0.25s, box-shadow 0.25s;
+  transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
 }
 
 .pcard:hover {
-  border-color: #c9a84c;
-  box-shadow: 0 4px 20px rgba(201,168,76,0.15), var(--shadow-md);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(13,59,53,0.15), 0 0 0 1.5px #C9A14A;
 }
 
 .pcard-disc {
   position: absolute;
   top: 10px; left: 10px;
-  background: #0a0a0a;
-  color: #c9a84c;
+  background: linear-gradient(135deg, #C9A14A 0%, #9A7820 100%);
+  color: #071F1C;
   font-size: 0.68rem;
-  font-weight: 700;
+  font-weight: 800;
   padding: 3px 8px;
   border-radius: 4px;
   z-index: 3;
-  border: 1px solid rgba(201,168,76,0.3);
   letter-spacing: 0.03em;
 }
 
@@ -84,18 +84,19 @@
 .pcard:hover .pcard-img-overlay { transform: translateY(0); }
 
 .pcard-quick {
-  background: #0a0a0a;
-  color: #c9a84c;
+  background: linear-gradient(135deg, #C9A14A 0%, #9A7820 100%);
+  color: #071F1C;
   font-size: 0.78rem;
-  font-weight: 600;
+  font-weight: 700;
   padding: 8px 20px;
   border-radius: 50px;
-  transition: background 0.2s, color 0.2s;
+  transition: opacity 0.2s;
   font-family: var(--font);
   letter-spacing: 0.03em;
-  border: 1px solid rgba(201,168,76,0.3);
+  border: none;
+  box-shadow: 0 4px 14px rgba(201,161,74,0.3);
 }
-.pcard-quick:hover { background: #1a1710; color: #e8c96c; }
+.pcard-quick:hover { opacity: 0.88; }
 
 .pcard-body { padding: 12px; }
 
@@ -120,11 +121,11 @@
 .pcard-add {
   width: 36px; height: 36px;
   border-radius: 10px;
-  background: #faf6ef;
-  color: #0a0a0a;
+  background: var(--green-light);
+  color: var(--green);
   display: flex; align-items: center; justify-content: center;
   transition: background 0.2s, color 0.2s, transform 0.15s;
-  border: 1px solid rgba(201,168,76,0.4);
+  border: 1px solid rgba(13,59,53,0.15);
 }
-.pcard-add:hover { background: #0a0a0a; color: #c9a84c; }
-.pcard-add.added { background: #0a0a0a; color: #c9a84c; animation: pop 0.3s ease; }
+.pcard-add:hover { background: var(--green); color: #C9A14A; transform: scale(1.08); }
+.pcard-add.added { background: var(--green); color: #C9A14A; animation: pop 0.3s ease; }

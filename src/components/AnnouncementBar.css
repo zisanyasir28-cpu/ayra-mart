@@ -1,10 +1,10 @@
 .ann-bar {
-  background: #0a0a0a;
-  color: rgba(201,168,76,0.85);
+  background: #071F1C;
+  color: rgba(201,161,74,0.9);
   padding: 9px 0;
   overflow: hidden;
   white-space: nowrap;
-  border-bottom: 1px solid rgba(201,168,76,0.15);
+  border-bottom: 1px solid rgba(201,161,74,0.2);
 }
 
 .ann-track {

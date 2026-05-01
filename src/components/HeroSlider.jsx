@@ -13,8 +13,8 @@ const slides = [
     cta: 'Shop Fresh Veggies',
     badge: '✦ Farm Fresh',
     img: 'https://images.unsplash.com/photo-1540420773420-3366772f4999?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #0a0a0a 0%, #1a1308 50%, #2d2200 100%)',
-    accent: '#c9a84c',
+    bg: 'linear-gradient(135deg, #071F1C 0%, #0D3B35 45%, #1A6B5F 100%)',
+    accent: '#C9A14A',
     tag: '#vegetables',
   },
   {
@@ -26,8 +26,8 @@ const slides = [
     cta: 'Order Fish & Meat',
     badge: '✦ Daily Fresh',
     img: 'https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #0a0a0a 0%, #120e07 50%, #1c1508 100%)',
-    accent: '#e8c96c',
+    bg: 'linear-gradient(135deg, #071F1C 0%, #0A2E2A 45%, #133D38 100%)',
+    accent: '#E8CC7A',
     tag: '#fish',
   },
   {
@@ -39,8 +39,8 @@ const slides = [
     cta: 'Shop Grocery',
     badge: '✦ Best Price',
     img: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=700&h=520&fit=crop&auto=format&q=85',
-    bg: 'linear-gradient(135deg, #0f0d08 0%, #1c1710 50%, #2a2010 100%)',
-    accent: '#f0d060',
+    bg: 'linear-gradient(135deg, #071F1C 0%, #0D3B35 40%, #0A2A26 100%)',
+    accent: '#F0D87A',
     tag: '#grocery',
   },
 ]
@@ -127,7 +127,7 @@ export default function HeroSlider() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.55 }}
             >
-              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#0a0a0a' }}>
+              <a href={s.tag} className="hero-cta" style={{ background: s.accent, color: '#071F1C' }}>
                 <ShoppingBag size={18} />
                 {s.cta}
               </a>

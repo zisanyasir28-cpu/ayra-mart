@@ -1,5 +1,5 @@
 .nl-sec {
-  background: linear-gradient(135deg, #0a0a0a 0%, #1a1710 60%, #2a2010 100%);
+  background: linear-gradient(135deg, #071F1C 0%, #0D3B35 60%, #1A6B5F 100%);
   padding: 72px 0;
 }
 
@@ -39,7 +39,7 @@
   transition: border-color 0.2s, background 0.2s;
 }
 .nl-input::placeholder { color: rgba(255,255,255,0.4); }
-.nl-input:focus { border-color: #c9a84c; background: rgba(255,255,255,0.08); }
+.nl-input:focus { border-color: #C9A14A; background: rgba(255,255,255,0.08); }
 .nl-select { cursor: pointer; }
 .nl-select option { background: var(--dark-soft); color: white; }
 
